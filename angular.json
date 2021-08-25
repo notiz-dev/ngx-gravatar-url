@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "ngx-gravatar-url": {
+    "gravatar-url-demo": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -41,7 +41,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/ngx-gravatar-url",
+            "outputPath": "dist/gravatar-url-demo",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -93,10 +93,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "ngx-gravatar-url:build:production"
+              "browserTarget": "gravatar-url-demo:build:production"
             },
             "development": {
-              "browserTarget": "ngx-gravatar-url:build:development"
+              "browserTarget": "gravatar-url-demo:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -104,11 +104,42 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "ngx-gravatar-url:build"
+            "browserTarget": "gravatar-url-demo:build"
+          }
+        }
+      }
+    },
+    "ngx-gravatar-url": {
+      "projectType": "library",
+      "root": "projects/ngx-gravatar-url",
+      "sourceRoot": "projects/ngx-gravatar-url/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-angular:ng-packagr",
+          "options": {
+            "project": "projects/ngx-gravatar-url/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ngx-gravatar-url/tsconfig.lib.prod.json"
+            },
+            "development": {
+              "tsConfig": "projects/ngx-gravatar-url/tsconfig.lib.json"
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ngx-gravatar-url/src/test.ts",
+            "tsConfig": "projects/ngx-gravatar-url/tsconfig.spec.json",
+            "karmaConfig": "projects/ngx-gravatar-url/karma.conf.js"
           }
         }
       }
     }
   },
-  "defaultProject": "ngx-gravatar-url"
+  "defaultProject": "gravatar-url-demo"
 }
