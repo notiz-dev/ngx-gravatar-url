@@ -1,5 +1,7 @@
 # ngx-gravatar-url
 
+[![npm version](https://badge.fury.io/js/ngx-gravatar-url.svg)](https://www.npmjs.com/package/ngx-gravatar-url)
+
 Angular Pipe to create a Gravatar URL based on [gravatar-url](https://github.com/sindresorhus/gravatar-url#readme) package.
 
 ```bash
