@@ -1,8 +1,8 @@
-import { GravatarDefaults } from "ngx-gravatar-url";
-import { Component } from "@angular/core";
+import { GravatarDefaults } from 'ngx-gravatar-url';
+import { Component } from '@angular/core';
 
 @Component({
-  selector: "app-root",
+  selector: 'app-root',
   template: `
     <div class="container mx-auto mt-16 min-h-screen space-y-24">
       <div class="prose">
@@ -44,6 +44,6 @@ import { Component } from "@angular/core";
   styles: [],
 })
 export class AppComponent {
-  email: string = "your-email";
-  default: GravatarDefaults = "identicon";
+  email: string = 'your-email';
+  default: GravatarDefaults = 'identicon';
 }

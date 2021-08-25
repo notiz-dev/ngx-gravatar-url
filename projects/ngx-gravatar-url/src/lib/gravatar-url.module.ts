@@ -21,7 +21,7 @@ export function gravatarUrlOptionsFactory(options: Options): Options {
 })
 export class GravatarUrlPipeModule {
   static forRoot(
-    options?: Options,
+    options?: Options
   ): ModuleWithProviders<GravatarUrlPipeModule> {
     return {
       ngModule: GravatarUrlPipeModule,
@@ -35,9 +35,9 @@ export class GravatarUrlPipeModule {
       ],
     };
   }
-  
+
   static forChild(
-    options?: Options,
+    options?: Options
   ): ModuleWithProviders<GravatarUrlPipeModule> {
     return {
       ngModule: GravatarUrlPipeModule,
