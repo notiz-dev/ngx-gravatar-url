@@ -106,6 +106,10 @@
           "options": {
             "browserTarget": "gravatar-url-demo:build"
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
     },

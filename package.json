@@ -10,7 +10,8 @@
     "format": "prettier --write \"src/**/*.{ts,scss,html}\" \"projects/**/*.{ts,scss,html}\"",
     "build:lib": "ng build ngx-gravatar-url && cp README.md dist/ngx-gravatar-url",
     "publish": "npm publish dist/ngx-gravatar-url",
-    "rocket": "npm run build:lib && npm run publish"
+    "rocket": "npm run build:lib && npm run publish",
+    "deploy": "cross-env NODE_ENV=production ng deploy --base-href=/ngx-gravatar-url/"
   },
   "private": true,
   "dependencies": {
@@ -34,6 +35,7 @@
     "@tailwindcss/forms": "latest",
     "@tailwindcss/typography": "latest",
     "@types/node": "^12.11.1",
+    "angular-cli-ghpages": "^1.0.0-rc.2",
     "autoprefixer": "^10.2.5",
     "cross-env": "^7.0.3",
     "ng-packagr": "^12.1.1",
