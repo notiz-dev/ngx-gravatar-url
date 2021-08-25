@@ -17,7 +17,13 @@ export class GravatarUrlPipe implements PipeTransform {
     @Optional() @Inject(GRAVATAR_OPTIONS) public defaultOptions: Options
   ) {}
 
-  transform(email: string, options?: Options): string {
+  transform(email: string | null, options?: Options): string | null {
+    if (email === null || email.length === 0) {
+      return null;
+    }
+
+    console.log(email);
+
     return gravatarUrl(email, { ...this.defaultOptions, ...options });
   }
 }
