@@ -8,5 +8,13 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/notiz-dev/ngx-gravatar-url.git"
+  },
+  "bugs": {
+    "url": "https://github.com/notiz-dev/ngx-gravatar-url/issues"
+  },
+  "homepage": "https://github.com/notiz-dev/ngx-gravatar-url#readme"
 }
