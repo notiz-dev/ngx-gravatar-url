@@ -1,7 +1,7 @@
 {
   "name": "ngx-gravatar-url",
   "description": "Gravatar Url Pipe for Angular ",
-  "version": "0.0.2",
+  "version": "1.0.0",
   "license": "MIT",
   "author": {
     "name": "Marc Stammerjohann"
