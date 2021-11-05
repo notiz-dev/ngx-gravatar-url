@@ -18,7 +18,10 @@ import { Component } from '@angular/core';
       <div
         class="rounded-md shadow-md bg-white p-4 flex flex-col items-center justify-center"
       >
-        <img class="-mt-12 " [src]="email | gravatarUrl:{default}" />
+        <img
+          class="-mt-12 "
+          [src]="email | gravatarUrl: { default: this.default }"
+        />
         <div class="mt-6 w-full flex">
           <select
             [(ngModel)]="default"
