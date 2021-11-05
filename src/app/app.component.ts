@@ -4,14 +4,14 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-    <div class="container mx-auto mt-16 min-h-screen space-y-24">
+    <div class="max-w-xl mx-auto mt-16 min-h-screen space-y-24">
       <div class="prose">
         <h1>ngx-gravatar-url</h1>
 
         Check out
-        <a href="https://github.com/notiz-dev/ngx-gravatar-url#readme"
-          >ngx-gravatar-url</a
-        >
+        <a href="https://github.com/notiz-dev/ngx-gravatar-url#readme">
+          ngx-gravatar-url
+        </a>
         repo.
       </div>
 
