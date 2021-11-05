@@ -22,8 +22,6 @@ export class GravatarUrlPipe implements PipeTransform {
       return null;
     }
 
-    console.log(email);
-
     return gravatarUrl(email, { ...this.defaultOptions, ...options });
   }
 }
