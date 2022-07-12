@@ -7,8 +7,8 @@
     "name": "Marc Stammerjohann"
   },
   "peerDependencies": {
-    "@angular/common": "^12.0.0 || ^13.0.0",
-    "@angular/core": "^12.0.0 || ^13.0.0",
+    "@angular/common": "^12.0.0 || ^13.0.0 || ^14.0.0",
+    "@angular/core": "^12.0.0 || ^13.0.0 || ^14.0.0",
     "gravatar-url": "^4.0.0"
   },
   "dependencies": {
