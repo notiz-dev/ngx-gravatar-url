@@ -9,7 +9,7 @@
     "build:prod": "ng build --configuration production",
     "format": "prettier --write \"src/**/*.{ts,scss,html}\" \"projects/**/*.{ts,scss,html}\"",
     "build:lib": "ng build ngx-gravatar-url && cp README.md dist/ngx-gravatar-url",
-    "publish": "npm publish dist/ngx-gravatar-url",
+    "publish": "cd dist/ngx-gravatar-url && npm publish",
     "rocket": "npm run build:lib && npm run publish",
     "deploy": "ng deploy --base-href=/ngx-gravatar-url/"
   },
